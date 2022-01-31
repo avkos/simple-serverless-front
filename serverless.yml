@@ -1,0 +1,11 @@
+service: service
+provider:
+  name: aws
+
+plugins:
+  - serverless-lift
+
+constructs:
+  front:
+    type: static-website
+    path: 'build'
